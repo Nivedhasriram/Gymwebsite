@@ -1,8 +1,18 @@
 body {
     margin:0px;
     padding: 0px;
-    background: url('bg.jpg') no-repeat;
-    background: opacity 0.2;
+}
+header::before{
+    background: url('bg.jpg') no-repeat center center/cover;
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index:-1;
+    opacity: 0.8;
 }
 .navbar{
     color:white;
@@ -10,31 +20,31 @@ body {
 }
 .left{
     position: absolute;
-    left:60px;
+    left:56px;
     top:8px;
 }
 .mid{
     display: flex;
     width:37%;
-    margin: 24px auto;
+    margin: 12px auto;
 }
 .right{
     position: absolute;
-    right:0px;
+    right:14px;
     top:20px;
     display: flex;
 }
 .menu{
-    display: inline-block;
+    display: flex;
 }
 .menu li {
-    display: inline-block;
+    display: flex;
 }
 .menu li a{
     color:white;
     text-decoration: none;
-    padding: 14px;
-    font-size: 20px;
+    padding: 11px;
+    font-size: 24px;
 }
 .menu li a:hover,.menu li a.active{
     color:grey;
@@ -63,13 +73,14 @@ body {
 }
 .join{
      color:white;
-     margin: 184px 140px;
-     padding: 0px 4px;
+     margin: 200px 170px;
+     padding : 0px 0px;
      text-decoration: none;
+     justify-content: center;
 }
 .join p{
     font-size: 50px;
-    margin:0px;
+    align-items: center;
 }
 .joinbtn{
     background-color: red;
@@ -77,100 +88,12 @@ body {
     border-color: grey;
     border-radius: 10px;
     cursor: pointer;
-    margin: 17px 2px;
+    margin: -12px 2px;
     padding: 11px 9px;
 }
 .joinbtn:hover{
     background-color: darkgray;
 }
 .bod{
-    background-color:black;
-    margin: 530px auto;
-    padding: 2px 2px;
-}
-.bod img{
-    width:300px;
-    margin: 0px 250px;
-    padding: 2px 19px;
-}
-.col{
-    float:left;
-    width: 20.33%;
-    padding: 5px;
-}
-.bod::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.col:hover{
-    opacity: 0.5;
-    cursor: pointer;
-}
-.headings{
-    color:white;
-    margin:-525px -13px;
-    padding: 0px 394px
-}
-.title1{
-    float:left;
-    width:39.33%;
-    padding: 0px;
-    margin: -28px -105px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    border:2px solid white;
-    background-color: black;
-    text-align: center;
-}
-.title2{
-    float:left;
-    width: 39.33%;
-    padding: 0px;
-    margin: -28px 213px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    border:2px solid white;
-    background-color: black;
-    text-align: center;
-}
-.title3{
-    float: left;
-    padding:0px;
-    margin: -28px 532px;
-    width:39.33%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    border:2px solid white;
-    background-color: black;
-    text-align: center;
-}
-.Menu{
-    display: block;
-    background-color: black;
-    margin: -144px -408px;
-    padding: 8px 120px
-}
-.Menu li{
-    display: inline-block;
-    text-decoration: none;
-}
-.Menu li a{
-    color:white;
-    float: left;
-    text-decoration: none;
-    padding: 81px;
-    font-size: 14px;
-    width: 48%;
-    margin-top: -17px;
-}
-.Menu li a:hover{
-    color:grey;
-    text-decoration: underline;
-}
-.title{
-    margin:27px -322px;
-    padding: 89px 0px;
-    font-size: 26px;
-    text-decoration: underline;
+    display:flex;
 }
