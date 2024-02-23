@@ -2,10 +2,11 @@
     margin:0px;
     padding: 0px;
 }
+
 html{
     scroll-behavior: smooth;
 }
-/* navigation bar */
+
 #navbar{
     display: flex;
     align-items: center;
@@ -22,6 +23,7 @@ html{
 #navbar ul{
     display: flex;
 }
+
 #navbar::before{
     content:"";
     /* background-color: black; */
@@ -85,6 +87,7 @@ html{
     font-size: 1.5rem;
 }
 /* Services section */
+
 #services-container::before{
     content:"";
     background-color: black;
